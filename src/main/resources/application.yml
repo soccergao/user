@@ -1,1 +1,6 @@
-
+# 日志
+logging:
+  level:
+    root: info
+  file:
+    path: ./logs
