@@ -1,6 +1,24 @@
-# 日志
+# spring
+spring:
+  application:
+    name: user
+# server
+server:
+  port: 8088
+  servlet:
+    context-path: /
+# log
 logging:
   level:
     root: info
   file:
     path: ./logs
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
